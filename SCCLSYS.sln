@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCCL.Web", "SCCL.Web\SCCL.Web.csproj", "{5959BC8C-894A-45FE-A014-291915240D56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCCL.Domain", "SCCL.Domain\SCCL.Domain.csproj", "{05710DE5-1379-4563-99AD-D4D1DCF8D94E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCCL.UnitTests", "SCCL.UnitTests\SCCL.UnitTests.csproj", "{A8E5BDBA-2943-45AD-9EC7-806BAB041E75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5959BC8C-894A-45FE-A014-291915240D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5959BC8C-894A-45FE-A014-291915240D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5959BC8C-894A-45FE-A014-291915240D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5959BC8C-894A-45FE-A014-291915240D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05710DE5-1379-4563-99AD-D4D1DCF8D94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05710DE5-1379-4563-99AD-D4D1DCF8D94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05710DE5-1379-4563-99AD-D4D1DCF8D94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05710DE5-1379-4563-99AD-D4D1DCF8D94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E5BDBA-2943-45AD-9EC7-806BAB041E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E5BDBA-2943-45AD-9EC7-806BAB041E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E5BDBA-2943-45AD-9EC7-806BAB041E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E5BDBA-2943-45AD-9EC7-806BAB041E75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
