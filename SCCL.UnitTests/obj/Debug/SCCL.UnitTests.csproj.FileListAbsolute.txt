@@ -1,0 +1,5 @@
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\SCCL.UnitTests.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\SCCL.UnitTests.pdb
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\obj\Debug\SCCL.UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\obj\Debug\SCCL.UnitTests.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\obj\Debug\SCCL.UnitTests.pdb

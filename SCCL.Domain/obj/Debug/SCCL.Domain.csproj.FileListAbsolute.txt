@@ -1,0 +1,5 @@
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\SCCL.Domain.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\SCCL.Domain.pdb
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\obj\Debug\SCCL.Domain.csprojResolveAssemblyReference.cache
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\obj\Debug\SCCL.Domain.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\obj\Debug\SCCL.Domain.pdb

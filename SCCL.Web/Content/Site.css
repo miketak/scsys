@@ -516,14 +516,14 @@ h3.heading-sec {
 }
 
 .slider-overlay {
-  background: rgba(0, 0, 0, 0.4);
-  background-image: url("../../assets/img/pattern.png");
-  background-repeat: repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: url('Images/pattern.png');
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .slider-text {
@@ -663,13 +663,13 @@ h3.heading-sec {
 }
 
 #content-region-2 {
-  background: url("../../assets/img/img-2.jpg") no-repeat;
-  padding: 80px 0;
-  width: 100%;
-  overflow: hidden;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
+    background: url('Images/img-2.jpg') no-repeat;
+    padding: 80px 0;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
 #content-region-2 .flex-control-paging li a {

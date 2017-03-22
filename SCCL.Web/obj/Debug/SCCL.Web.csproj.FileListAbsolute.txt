@@ -13,6 +13,5 @@ C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.W
 C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Webpages.Razor.xml
 C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Helpers.xml
 C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Mvc.xml
-C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\obj\Debug\SCCL.Web.csprojResolveAssemblyReference.cache
 C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\obj\Debug\SCCL.Web.dll
 C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\obj\Debug\SCCL.Web.pdb
