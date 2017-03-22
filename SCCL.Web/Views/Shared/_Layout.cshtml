@@ -1,40 +1,185 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <title>STABLE CORPS</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet"/>
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet"/>
+    <link href="~/Content/ionicons.css" rel="stylesheet"/>
+    <link href="~/Content/Site.css" rel="stylesheet"/>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
-            </div>
+<div class="navbar navbar-fixed-top navbar-default sticky-nav sticky" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("STABLE CORPS", "Index", "Home", null, new {@class = "logolink img-responsive"})
         </div>
-    </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Services</a>
+                </li>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+                <li class="social-nav">
+                    <a target="_blank" href="https://www.facebook.com/StableCorps">
+                        <i class="ion-social-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-nav">
+                    <a target="_blank" href="https://twitter.com/stablecorps">
+                        <i class="ion-social-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-nav">
+                    <a target="_blank" href="https://www.youtube.com/channel/UCaxD8H5NhR9eDsIMVID4Vaw">
+                        <i class="ion-social-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-->
+</div><!--navigation end-->
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+@*<div class="container">*@
+@RenderBody()
+<hr/>
 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+<!--Footer-->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 margin-btm-20">
+                <div class="footer-col">
+                    <h3>STABLE CORPS</h3>
+                    <p>
+                        We are dedicated to serving you with solutions to your needs. Just name it
+                    </p>
+                </div>
+                <div class="space-20"></div>
+                <div class="footer-col">
+                    <h3>contact info</h3>
+                    <p>
+                        <i class="ion-home"></i> Stable Corps, P.O. Box KS 16999, Kumasi, Ghana
+                    </p>
+                    <p>
+                        <i class="ion-iphone"></i> +233 20 049 5297, +1 724 713 2249
+                    </p>
+                    <p>
+                        <i class="ion-email"></i> info@stablecorps.com
+                    </p>
+                </div>
+                <div class="space-20"></div>
+                <div class="footer-col">
+                    <h3>Follow us</h3>
+                    <ul class=" list-inline social-btn">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/StableCorps">
+                                <i class="ion-social-facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like On Facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/stablecorps">
+                                <i class="ion-social-twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://plus.google.com/105370864366823037587/about">
+                                <i class="ion-social-googleplus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On googleplus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.pinterest.com/stablecorps">
+                                <i class="ion-social-pinterest" data-toggle="tooltip" data-placement="top" title="" data-original-title="pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ion-social-skype" data-toggle="tooltip" data-placement="top" title="" data-original-title="skype"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--footer social col-->
+            </div><!--col-4 end-->
+
+            <div class="col-md-3 margin-btm-20">
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="post-list list-unstyled">
+                        <li>
+                            <a href="login-student.php" class="hover-color">Student Portal</a>
+                        </li>
+                        <li>
+                            <a href="login-project.php" class="hover-color">Project Portal</a>
+                        </li>
+                        <li>
+                            <a href="login.php" class="hover-color">Employee Login</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://email.stablecorps.com" class="hover-color">Corporate Email</a>
+                        </li>
+                        <li>
+                            <a href="login.php" class="hover-color">Admin Login</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover-color">SCOTEG</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover-color">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--latest post col end-->
+
+            <div class="col-md-5">
+                <div class="footer-col">
+                    <h3>Get in touch</h3>
+                    <form action="" name="footerform" id="contactForm" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Name..." required data-validation-required-message="Please enter your name.">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="email" class="form-control" placeholder="Email..." required data-validation-required-message="Please enter your email.">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject..." required data-validation-required-message="Help us with a subject line.">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" placeholder="Message..." rows="7" required data-validation-required-message="Please enter your message."></textarea>
+                            </div>
+                            <div class="col-md-12 text-right">
+                                <button type="submit" class="btn btn-lg btn-white">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!--get in touch col end-->
+        </div><!--footer main row end-->
+        <!--<div class="space-50"></div>-->
+        <div class="row">
+            <div class="col-md-12 text-center footer-bottom">
+                <span>&copy;2017.All rights resrved. STABLE CORPS</span>
+            </div>
+        </div><!--footer copyright row end-->
+    </div><!--container-->
+</div>
 </body>
 </html>
