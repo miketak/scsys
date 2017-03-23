@@ -6,22 +6,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        @Html.ActionLink("STABLE CORPS", "Index", "Home", null, new { @class = "logolink img-responsive" })
+        @Html.ActionLink("STABLE CORPS", "Index", "Home", null, new { @class = "logolink navbar-brand img-responsive" })
     </div>
     <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
             <li>
-                <a href="">Home</a>
+                @Html.ActionLink("Home", "Index", "Home")
             </li>
             <li>
-                <a href="">Services</a>
+                @Html.ActionLink("Solutions", "Index", "Solutions")
             </li>
             <li>
-                <a href="">About Us</a>
+                @Html.ActionLink("Services", "Index", "Services")
             </li>
             <li>
-                <a href="">Contact Us</a>
-            </li>
+                @Html.ActionLink("About Us", "Index", "AboutUs")
+            </li>            
+            <li>
+                @Html.ActionLink("Contact Us", "Index", "ContactUs")
+            </li>            
+
             <li class="social-nav">
                 <a target="_blank" href="https://www.facebook.com/StableCorps">
                     <i class="ion-social-facebook"></i>

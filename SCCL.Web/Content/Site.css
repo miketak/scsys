@@ -3,10 +3,11 @@
 a.logolink {
     background: url(Images/sclogo.png) no-repeat top left;
      display: block;
-     width: 250px;
+     width: 260px;
      height: 25px;
      text-indent: -9999px;
-     margin-top: 10px;
+     margin-top: 12px;
+    margin-left: -20px;
 }
 
 
@@ -1200,9 +1201,7 @@ h4.portfolio-post-title {
 
 /****************breadcrumbs*********************************************/
 .page-tree-bg {
-  background-image: url(../img/bread-bg.png);
   background-color: #054a86;
-  padding: 100px 0;
   width: 100%;
   position: relative;
   background-size: cover;
@@ -1219,11 +1218,11 @@ h4.portfolio-post-title {
   background-attachment: fixed;
 }
 
-h3.page-tree-text {
-  text-align: center;
-  text-transform: uppercase;
+p.page-tree-text {
+  text-align: left;
   color: #fff;
   margin: 0px;
+    font-family: serif;
 }
 
 /***********************bootstrap pagination override***************************/
