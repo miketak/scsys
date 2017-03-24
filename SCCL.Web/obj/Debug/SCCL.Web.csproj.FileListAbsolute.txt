@@ -16,3 +16,35 @@ C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.W
 C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\obj\Debug\SCCL.Web.dll
 C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\obj\Debug\SCCL.Web.pdb
 C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\obj\Debug\SCCL.Web.csprojResolveAssemblyReference.cache
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\SCCL.Web.dll.config
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\SCCL.Web.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\SCCL.Web.pdb
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Helpers.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Mvc.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Razor.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Webpages.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Webpages.Razor.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Razor.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Webpages.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Webpages.Razor.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Helpers.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\System.Web.Mvc.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\obj\Debug\SCCL.Web.csprojResolveAssemblyReference.cache
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\obj\Debug\SCCL.Web.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\obj\Debug\SCCL.Web.pdb
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Moq.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Ninject.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Ninject.Web.Common.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\WebActivator.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Moq.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Ninject.pdb
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Ninject.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Ninject.Web.Common.pdb
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Ninject.Web.Common.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Ninject.Web.Mvc.pdb
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\Ninject.Web.Mvc.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\SCCL.Domain.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\SCCL.Domain.pdb
