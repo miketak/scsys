@@ -68,12 +68,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IServiceRepository.cs" />
+    <Compile Include="Abstract\ISolutionRepository.cs" />
+    <Compile Include="Entities\Service.cs" />
+    <Compile Include="Entities\Solution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Abstract\" />
     <Folder Include="Concrete\" />
-    <Folder Include="Entities\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

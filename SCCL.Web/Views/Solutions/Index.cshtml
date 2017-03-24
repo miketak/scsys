@@ -1,5 +1,7 @@
-﻿@{
-    ViewBag.Title = "Solutions";
+﻿@model SCCL.Web.ViewModels.SolutionServiceViewModel
+
+@{
+    ViewBag.Title = ViewBag.NavTitle;
 }
 
 <!--Title Strip-->
@@ -14,12 +16,11 @@
 
 <div class="container">
     <div class="row">
-        
-        <!--Solutions Nav-->
+        <!--SolServices Nav-->
         <div class="col-md-4">
-            @Html.Partial("_SolutionsNav")
+            @Html.Partial("_SolServNav", Model)
         </div>
-        <!--End of Solutions Nav-->
+        <!--End of SolServices Nav-->
         
         <!--Solution Content-->
         <div class="col-md-8">
@@ -48,7 +49,7 @@
             
             <!--Button Link-->
             <p align="center">
-                <a href="contact.php" class="btn btn-lg theme-btn-color">Contact Us</a>
+                @Html.ActionLink("Contact Us", "Index", "ContactUs", null, new { @class = "btn btn-lg theme-btn-color" })
             </p>
             <!---->
         </div>

@@ -1,3 +1,5 @@
+using System.Web.Mvc;
+
 [assembly: WebActivator.PreApplicationStartMethod(typeof(SCCL.Web.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(SCCL.Web.App_Start.NinjectWebCommon), "Stop")]
 
@@ -53,6 +55,7 @@ namespace SCCL.Web.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            DependencyResolver.SetResolver(new SCCL.Web.Infrastructure.NinjectDependencyResolver(kernel));
         }        
     }
 }

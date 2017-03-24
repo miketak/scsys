@@ -160,7 +160,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\SolutionServiceViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -172,7 +174,7 @@
     <Content Include="Views\Shared\_Testimonials.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_MainNav.cshtml" />
-    <Content Include="Views\Shared\_SolutionsNav.cshtml" />
+    <Content Include="Views\Shared\_SolServNav.cshtml" />
     <Content Include="Views\Solutions\Index.cshtml" />
     <Content Include="Views\Shared\_BreadCrumps.cshtml" />
     <Content Include="Views\AboutUs\Index.cshtml" />
