@@ -28,26 +28,10 @@
 
             <div class="space-30"></div>
 
-            <p>
-                Renewable Energy is the future for energy generation in the near future. 
-                The transition from fossil fuel energy to renewables is globally being adopted 
-                to ensure a sustainable future. Renewable energy has now become an important 
-                component to consider to bridge the gap between globally declared goals on 
-                sustainability and our current reliance on fossil fuels for energy.
-            </p>
-            <p>
-                Smooth integration of these technologies into our current mix is a very 
-                complex process due to the inconsistency in renewable sources.
-            </p>
-            <p>
-                SCCL offers solutions for designing remote systems, grid tie 
-                and even hybrid renewable technology-coupling wind and solar energy 
-                seamlessly. Kindly contact us now for more information and employ 
-                our technology to join saving the planet.
-            </p>
-            <br>
+            @Html.Partial("_SolServContent", Model)
             
             <!--Button Link-->
+            <br />
             <p align="center">
                 @Html.ActionLink("Contact Us", "Index", "ContactUs", null, new { @class = "btn btn-lg theme-btn-color" })
             </p>

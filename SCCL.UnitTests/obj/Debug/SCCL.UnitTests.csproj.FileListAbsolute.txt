@@ -37,3 +37,32 @@ C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Deb
 C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\obj\Debug\SCCL.UnitTests.pdb
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Moq.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Ninject.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\SCCL.Domain.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\SCCL.Web.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.Helpers.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.Mvc.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.Razor.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.WebPages.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\WebActivator.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\SCCL.Domain.pdb
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\SCCL.Web.pdb
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Moq.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Ninject.pdb
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Ninject.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Ninject.Web.Common.pdb
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Ninject.Web.Mvc.pdb
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\Ninject.Web.Mvc.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.Helpers.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.Mvc.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.Razor.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.WebPages.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.UnitTests\bin\Debug\System.Web.WebPages.Razor.xml

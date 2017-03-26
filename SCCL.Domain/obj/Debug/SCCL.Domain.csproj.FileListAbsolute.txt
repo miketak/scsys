@@ -21,3 +21,21 @@ C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\
 C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\obj\Debug\SCCL.Domain.dll
 C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\obj\Debug\SCCL.Domain.pdb
 C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\obj\Debug\SCCL.Domain.csprojResolveAssemblyReference.cache
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\SCCL.Domain.dll.config
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\EntityFramework.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\EntityFramework.xml
+C:\Users\aurelie\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\EntityFramework.SqlServer.xml

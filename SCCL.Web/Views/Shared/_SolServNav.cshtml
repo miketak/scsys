@@ -22,14 +22,17 @@
             {
                 foreach (var p in Model.Solutions)
                 {
-                    <li>@Html.ActionLink(p.Name, "Detail", "Solutions", null, new {@class = "hover-color"})</li>
+                    
+                    <li>
+                        @Html.ActionLink(p.Name, "Detail", "Solutions",  new {p.Id}, new {@class = "hover-color"})
+                    </li>
                 }
             }
             else
             {
                 foreach (var p in Model.Services)
                 {
-                    <li>@Html.ActionLink(p.Name, "Detail", "Services", null, new {@class = "hover-color"})</li>
+                    <li>@Html.ActionLink(p.Name, "Detail", "Services", new{p.Id}, new {@class = "hover-color"})</li>
                 }
             }
         }
@@ -37,7 +40,7 @@
 </div>
 <!--End of SolServices Nav-->
 
-<hr>
+@*<hr>*@
 
 <!--Solution Specific Services-->
 @*<div class="sidebar-box">

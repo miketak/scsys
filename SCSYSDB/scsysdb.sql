@@ -17,7 +17,7 @@ GO
 
 Create table Solutions
 (
-	[SolutionsID] INT NOT NULL PRIMARY KEY IDENTITY,
+	[SolutionsId] INT NOT NULL PRIMARY KEY IDENTITY,
 	[Image] IMAGE,
 	[Name] NVARCHAR(100) NOT NULL,
 	[DESCRIPTION] NVARCHAR(512) NOT NULL,
@@ -25,7 +25,7 @@ Create table Solutions
 
 Create table Services
 (
-	[ServicesID] INT NOT NULL PRIMARY KEY IDENTITY,
+	[ServicesId] INT NOT NULL PRIMARY KEY IDENTITY,
 	[Image] IMAGE,
 	[Name] NVARCHAR(100) NOT NULL,
 	[DESCRIPTION] NVARCHAR(512) NOT NULL,
@@ -88,5 +88,22 @@ INSERT INTO [dbo].[Solutions_Services]
 	(3,3)
 GO
 
+print '' print  ' *** creating procedure sp_retrieve_solutions'
+GO
+Create PROCEDURE sp_retrieve_solutions
+AS
+BEGIN
+SELECT SolutionsId, Name, Description
+FROM Solutions
+END
+
+print '' print  ' *** creating procedure sp_retrieve_services'
+GO
+Create PROCEDURE sp_retrieve_services
+AS
+BEGIN
+SELECT ServicesId, Name, Description
+FROM Services
+END
 
 

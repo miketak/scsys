@@ -4,7 +4,7 @@ namespace SCCL.Domain.Entities
 {
     public class Solution
     {
-        public int SolutionId { get; set; }
+        public int Id { get; set; }
 
         public string Name { get; set; }
 

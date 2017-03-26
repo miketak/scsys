@@ -15,7 +15,7 @@
                                 Specialists trained to do what they do best
                             </p>
                             <p class="slide-btn">
-                                <a href="about.php" class="btn btn-white btn-lg">Read more</a>
+                                @Html.ActionLink("Read More", "Index", "AboutUs", null, new {@class = "btn btn-white btn-lg"})
                             </p>
                         </div>
                     </figcaption>
@@ -32,7 +32,7 @@
                                 Want to boost productivity in your company?
                             </p>
                             <p class="slide-btn">
-                                <a href="services.php" class="btn btn-white btn-lg">See Services</a>
+                                @Html.ActionLink("See Services", "Index", "Services", null, new { @class = "btn btn-white btn-lg" })
                             </p>
                         </div>
                     </figcaption>
@@ -49,7 +49,7 @@
                                 We innovate for small and large enterprises
                             </p>
                             <p class="slide-btn">
-                                <a href="contact.php" class="btn btn-white btn-lg">Contact us</a>
+                                @Html.ActionLink("Contact Us", "Index", "ContactUs", null, new { @class = "btn btn-white btn-lg" })
                             </p>
                         </div>
                     </figcaption>

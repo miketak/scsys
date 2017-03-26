@@ -22,12 +22,22 @@ namespace SCCL.Web.Controllers
         {
             var solutionservices = new SolutionServiceViewModel() {Services = _repository.Services};
             ViewBag.NavTitle = "Services";
+
+            var service = _repository.Services.FirstOrDefault(p => p.Id == 1);
+            solutionservices.Service = service;
+
             return View("../Solutions/Index", solutionservices);
         }
 
-        public ActionResult Detail()
+        public ActionResult Detail(int id)
         {
-            throw new NotImplementedException();
+            var solutionservices = new SolutionServiceViewModel { Services = _repository.Services };
+            ViewBag.NavTitle = "Services";
+
+            var service = _repository.Services.FirstOrDefault(p => p.Id == id);
+            solutionservices.Service = service;
+
+            return View("../Solutions/Index", solutionservices);
         }
     }
 }

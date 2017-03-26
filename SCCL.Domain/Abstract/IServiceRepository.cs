@@ -9,6 +9,6 @@ namespace SCCL.Domain.Abstract
 {
     public interface IServiceRepository
     {
-        IEnumerable<Service> Services { get; } 
+        IEnumerable<Service> Services { get; }
     }
 }

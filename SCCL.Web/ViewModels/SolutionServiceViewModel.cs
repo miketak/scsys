@@ -11,5 +11,11 @@ namespace SCCL.Web.ViewModels
         public IEnumerable<Service> Services { get; set; }
 
         public IEnumerable<Solution> Solutions { get; set; }
+
+        public Service Service { get; set; }
+
+        public Solution Solution { get; set; }
+
+        public string ReturnUrl { get; set; }
     }
 }

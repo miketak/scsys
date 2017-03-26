@@ -1,0 +1,9 @@
+﻿@model SCCL.Web.ViewModels.SolutionServiceViewModel
+   
+
+
+<h1>@(ViewBag.NavTitle=="Solutions" ? Model.Solution.Name : Model.Service.Name)</h1>
+        
+<p>
+    @(ViewBag.NavTitle == "Solutions" ? Model.Solution.Description : Model.Service.Description)
+</p>

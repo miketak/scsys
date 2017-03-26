@@ -9,6 +9,6 @@ namespace SCCL.Domain.Abstract
 {
     public interface ISolutionRepository
     {
-        IEnumerable<Solution> Solutions { get;  }
+        IEnumerable<Solution> Solutions { get; }
     }
 }
