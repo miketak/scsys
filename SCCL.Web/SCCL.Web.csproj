@@ -161,6 +161,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutUsController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
@@ -188,6 +189,8 @@
     <Content Include="Views\AboutUs\Index.cshtml" />
     <Content Include="Views\ContactUs\Index.cshtml" />
     <Content Include="Views\Shared\_SolServContent.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
