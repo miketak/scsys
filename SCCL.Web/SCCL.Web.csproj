@@ -194,6 +194,8 @@
     <Content Include="Views\Home\ContactUs.cshtml" />
     <Content Include="Views\Solutions\Edit.cshtml" />
     <Content Include="Views\Solutions\Create.cshtml" />
+    <Content Include="Views\Services\Edit.cshtml" />
+    <Content Include="Views\Services\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -205,7 +207,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Contact\" />
-    <Folder Include="Views\Services\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

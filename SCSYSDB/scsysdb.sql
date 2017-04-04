@@ -131,6 +131,30 @@ AS
 	END
 GO
 
+print '' print '*** Creating sp_update_service'
+GO
+CREATE PROCEDURE [dbo].[sp_update_service]
+	(
+		@Id					[int],
+		
+		@OldName				[nvarchar](100), 
+		@OldDescription			[nvarchar](512), 
+		
+		@NewName				[nvarchar](100), 
+		@NewDescription			[nvarchar](512)
+	)
+AS
+	BEGIN
+		UPDATE Services
+		      SET Name = @NewName,
+				  Description = @NewDescription
+			WHERE ServicesId = @Id
+			  AND Name = @OldName
+			  AND Description = @OldDescription
+		RETURN @@ROWCOUNT
+	END
+GO
+
 print '' print  '*** Creating procedure sp_delete_solution'
 GO
 CREATE PROCEDURE sp_delete_solution
@@ -169,6 +193,23 @@ CREATE PROCEDURE [dbo].[sp_create_solution]
 AS
 	BEGIN
 		INSERT INTO [dbo].[Solutions]
+			(NAME, DESCRIPTION)
+		VALUES
+			(@NAME, @DESCRIPTION)
+		RETURN @@ROWCOUNT
+	END
+GO
+
+print '' print '*** Creating sp_create_service'
+GO
+CREATE PROCEDURE [dbo].[sp_create_service]
+(
+	@NAME				[NVARCHAR](100),
+	@DESCRIPTION		[NVARCHAR](512)
+)
+AS
+	BEGIN
+		INSERT INTO [dbo].[Services]
 			(NAME, DESCRIPTION)
 		VALUES
 			(@NAME, @DESCRIPTION)

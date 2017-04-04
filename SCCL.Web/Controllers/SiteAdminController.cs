@@ -23,7 +23,11 @@ namespace SCCL.Web.Controllers
         // GET: SiteAdmin
         public ActionResult Index()
         {
-            solutionservices = new SolutionServiceViewModel { Solutions = _solutionrepository.Solutions };
+            solutionservices = new SolutionServiceViewModel
+            {
+                Solutions = _solutionrepository.Solutions,
+                Services = _servicerepository.Services
+            };
 
             return View(solutionservices);
         }
