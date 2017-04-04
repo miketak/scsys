@@ -102,3 +102,7 @@ C:\Users\nh229u06.CSD\Desktop\MikeT\scsys\SCCL.Web\bin\System.Web.Mvc.xml
 C:\Users\nh229u06.CSD\Desktop\MikeT\scsys\SCCL.Web\obj\Debug\SCCL.Web.csprojResolveAssemblyReference.cache
 C:\Users\nh229u06.CSD\Desktop\MikeT\scsys\SCCL.Web\obj\Debug\SCCL.Web.dll
 C:\Users\nh229u06.CSD\Desktop\MikeT\scsys\SCCL.Web\obj\Debug\SCCL.Web.pdb
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\EntityFramework.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\EntityFramework.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Web\bin\EntityFramework.SqlServer.xml

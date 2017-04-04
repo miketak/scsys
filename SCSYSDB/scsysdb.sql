@@ -105,5 +105,30 @@ BEGIN
 SELECT ServicesId, Name, Description
 FROM Services
 END
+GO
+
+print '' print '*** Creating sp_update_solution'
+GO
+CREATE PROCEDURE [dbo].[sp_update_solution]
+	(
+		@Id					[int],
+		
+		@OldName				[nvarchar](100), 
+		@OldDescription			[nvarchar](512), 
+		
+		@NewName				[nvarchar](100), 
+		@NewDescription			[nvarchar](512)
+	)
+AS
+	BEGIN
+		UPDATE Solutions
+		      SET Name = @NewName,
+				  Description = @NewDescription
+			WHERE SolutionsId = @Id
+			  AND Name = @OldName
+			  AND Description = @OldDescription
+		RETURN @@ROWCOUNT
+	END
+GO
 
 

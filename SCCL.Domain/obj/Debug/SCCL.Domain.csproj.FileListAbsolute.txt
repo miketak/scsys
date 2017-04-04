@@ -62,3 +62,8 @@ C:\Users\nh229u06.CSD\Desktop\MikeT\scsys\SCCL.Domain\bin\Debug\System.Web.WebPa
 C:\Users\nh229u06.CSD\Desktop\MikeT\scsys\SCCL.Domain\obj\Debug\SCCL.Domain.csprojResolveAssemblyReference.cache
 C:\Users\nh229u06.CSD\Desktop\MikeT\scsys\SCCL.Domain\obj\Debug\SCCL.Domain.dll
 C:\Users\nh229u06.CSD\Desktop\MikeT\scsys\SCCL.Domain\obj\Debug\SCCL.Domain.pdb
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\SCCL.Domain.dll.config
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Mike T\Desktop\MICHAELTAKRAMA\FinalProject\scsys\SCCL.Domain\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,6 +1,10 @@
-﻿using System.Linq;
+﻿using System;
+using System.Diagnostics;
+using System.Linq;
 using System.Web.Mvc;
 using SCCL.Domain.Abstract;
+using SCCL.Domain.DataAccess;
+using SCCL.Domain.Entities;
 using SCCL.Web.ViewModels;
 
 namespace SCCL.Web.Controllers
@@ -36,6 +40,51 @@ namespace SCCL.Web.Controllers
             solutionservices.Solution = solution;
 
             return View("Index", solutionservices);
+        }
+
+
+        // Admin Functionality
+
+        public ActionResult Create()
+        {
+            throw new NotImplementedException();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit( [Bind(Include = "Id, Name, Description")] Solution newSolution )
+        {
+            if (ModelState.IsValid)
+            {
+                var oldSolution = _repository.Solutions.FirstOrDefault(b => b.Id == newSolution.Id);
+                try
+                {
+                    if (SolutionsAccessor.UpdateSolution(oldSolution, newSolution))
+                    {
+                        return RedirectToAction("Index", "SiteAdmin", new { area = "" });
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                }
+            }
+
+            return View(newSolution);
+        }
+ 
+        public ActionResult Edit(int id)
+        {
+            solutionservices = new SolutionServiceViewModel { Solutions = _repository.Solutions };
+
+            var solution = _repository.Solutions.FirstOrDefault(p => p.Id == id);
+
+            return View("Edit", solution);    
+        }
+
+        public ActionResult Delete(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

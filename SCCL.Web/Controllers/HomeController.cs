@@ -13,5 +13,15 @@ namespace SCCL.Web.Controllers
         {
             return View();
         }
+
+        public ViewResult AboutUs()
+        {
+            return View("AboutUs");
+        }
+
+        public ViewResult ContactUs()
+        {
+            return View("ContactUs");
+        }
     }
 }
