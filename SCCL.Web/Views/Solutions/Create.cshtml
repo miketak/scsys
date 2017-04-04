@@ -1,15 +1,15 @@
 ﻿@model SCCL.Domain.Entities.Solution
 
 @{
-    ViewBag.Title = "Edit Solution";
+    ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Edit Solution</h2>
+<h2>Create Solution</h2>
 
 @using (Html.BeginForm())
 {
-    @Html.AntiForgeryToken()  
+    @Html.AntiForgeryToken()
 
     <div class="my-contact-form">
         <h4>Boat</h4>
@@ -35,7 +35,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default"/>
+                <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </div>
     </div>

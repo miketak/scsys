@@ -8,6 +8,7 @@ namespace SCCL.Domain.DataAccess
 {
     public class SolutionsAccessor
     {
+
         public static List<Solution> RetrieveSolutions()
         {
             var solutions = new List<Solution>();
@@ -57,6 +58,58 @@ namespace SCCL.Domain.DataAccess
 
                 cmd.Parameters.AddWithValue("@NewName", newSolution.Name);
                 cmd.Parameters.AddWithValue("@NewDescription", newSolution.Description);
+
+                try
+                {
+                    conn.Open();
+                    rowsAffected = cmd.ExecuteNonQuery();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+
+            return rowsAffected == 1;
+        }
+
+        public static bool DeleteSolution(int id)
+        {
+            var rowsAffected = 0;
+
+            var conn = DbConnection.GetConnection();
+            var cmdText = @"sp_delete_solution";
+
+            using (var cmd = new SqlCommand(cmdText, conn) { CommandType = CommandType.StoredProcedure })
+            {
+                cmd.Parameters.AddWithValue("@Id", id);
+
+                try
+                {
+                    conn.Open();
+                    rowsAffected = cmd.ExecuteNonQuery();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+
+            return rowsAffected == 1;
+        }
+
+
+        public static bool CreateSolution(Solution solution)
+        {
+            var rowsAffected = 0;
+
+            var conn = DbConnection.GetConnection();
+            var cmdText = @"sp_create_solution";
+
+            using (var cmd = new SqlCommand(cmdText, conn) {CommandType = CommandType.StoredProcedure})
+            {
+                cmd.Parameters.AddWithValue("@Name", solution.Name);
+                cmd.Parameters.AddWithValue("@Description", solution.Description);
 
                 try
                 {

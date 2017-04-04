@@ -131,4 +131,49 @@ AS
 	END
 GO
 
+print '' print  '*** Creating procedure sp_delete_solution'
+GO
+CREATE PROCEDURE sp_delete_solution
+(
+	@ID[INT]
+)
+AS
+	BEGIN
+		DELETE FROM Solutions
+		WHERE SolutionsId = @ID
+		RETURN @@ROWCOUNT
+	END
+GO
+
+print '' print  '*** Creating procedure sp_delete_service'
+GO
+CREATE PROCEDURE sp_delete_service
+(
+	@ID[INT]
+)
+AS
+	BEGIN
+		DELETE FROM Services
+		WHERE ServicesId = @ID
+		RETURN @@ROWCOUNT
+	END
+GO
+
+print '' print '*** Creating sp_create_solution'
+GO
+CREATE PROCEDURE [dbo].[sp_create_solution]
+(
+	@NAME				[NVARCHAR](100),
+	@DESCRIPTION		[NVARCHAR](512)
+)
+AS
+	BEGIN
+		INSERT INTO [dbo].[Solutions]
+			(NAME, DESCRIPTION)
+		VALUES
+			(@NAME, @DESCRIPTION)
+		RETURN @@ROWCOUNT
+	END
+GO
+
 

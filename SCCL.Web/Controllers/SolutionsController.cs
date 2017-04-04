@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
 using System.Web.Mvc;
 using SCCL.Domain.Abstract;
 using SCCL.Domain.DataAccess;
@@ -47,7 +48,32 @@ namespace SCCL.Web.Controllers
 
         public ActionResult Create()
         {
-            throw new NotImplementedException();
+            return View();
+        } 
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "Name, Description")] Solution solution)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    if (!SolutionsAccessor.CreateSolution(solution))
+                    {
+                        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                }
+
+
+                return RedirectToAction("Index", "SiteAdmin");
+            }
+
+            return RedirectToAction("Index", "SiteAdmin");
         }
 
         [HttpPost]
@@ -84,7 +110,11 @@ namespace SCCL.Web.Controllers
 
         public ActionResult Delete(int id)
         {
-            throw new NotImplementedException();
+
+            SolutionsAccessor.DeleteSolution(id);
+
+            return RedirectToAction("Index", "SiteAdmin", new { area = ""});
+
         }
     }
 }
