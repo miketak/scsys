@@ -3,18 +3,28 @@
 
 @if (ViewBag.NavTitle == "Solutions")
 {
-    <img class="img-responsive" width="1970" height="700" src="@Url.Action("GetImage", "Solutions", new { Model.Solution.Id })" alt="--" />
+    if (Model.Solution.ImageData == null)
+    {
+        <h1>@Model.Solution.Name</h1>
+    }
+    else
+    {
+        <img class="img-responsive" width="1920" height="700" src="@Url.Action("GetImage", "Solutions", new {Model.Solution.Id})" alt="Service Image" />
+    }
 }
 else
 {
-    <img class="img-responsive" width="1970" height="700" src="@Url.Action("GetImage", "Services", new { Model.Service.Id})" alt="--" />
+    if (Model.Service.ImageData == null)
+    {
+        <h1>@Model.Service.Name</h1>
+    }
+    else
+    {
+        <img class="img-responsive" width="1920" height="700" src="@Url.Action("GetImage", "Services", new {Model.Solution.Id})" alt="Service Image"/>
+    }
 }
-
-@*<img src="~/Content/Images/Services/img-1.jpg" class="img-responsive" alt="renewable-energy"/>*@
    
-
-
-<h1>@(ViewBag.NavTitle=="Solutions" ? Model.Solution.Name : Model.Service.Name)</h1>
+<div class="space-30"></div>
         
 <p>
     @(ViewBag.NavTitle == "Solutions" ? Model.Solution.Description : Model.Service.Description)
