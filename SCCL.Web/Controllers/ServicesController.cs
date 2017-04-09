@@ -49,15 +49,22 @@ namespace SCCL.Web.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            return View(new Service());
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Name, Description")] Service service)
+        public ActionResult Create([Bind(Include = "Name, Description")] Service service, HttpPostedFileBase image = null)
         {
             if (ModelState.IsValid)
             {
+                if (image != null)
+                {
+                    service.ImageMimeType = image.ContentType;
+                    service.ImageData = new byte[image.ContentLength];
+                    image.InputStream.Read(service.ImageData, 0, image.ContentLength);
+                }
+
                 try
                 {
                     if (!ServicesAccessor.CreateService(service))
@@ -79,14 +86,21 @@ namespace SCCL.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id, Name, Description")] Service newService)
+        public ActionResult Edit(Service newService, HttpPostedFileBase image = null)        //([Bind(Include = "Id, Name, Description")] Service newService)
         {
             if (ModelState.IsValid)
             {
+                if (image != null)
+                {
+                    newService.ImageMimeType = image.ContentType;
+                    newService.ImageData = new byte[image.ContentLength];
+                    image.InputStream.Read(newService.ImageData, 0, image.ContentLength);
+                }
+
                 var oldService = _repository.Services.FirstOrDefault(b => b.Id == newService.Id);
                 try
                 {
-                    if (ServicesAccessor.UpdateSolution(oldService, newService))
+                    if (ServicesAccessor.UpdateService(oldService, newService))
                     {
                         return RedirectToAction("Index", "SiteAdmin", new { area = "" });
                     }
@@ -96,6 +110,7 @@ namespace SCCL.Web.Controllers
                     Debug.WriteLine(ex.Message);
                 }
             }
+
             return View(newService);
         }
 
@@ -115,6 +130,15 @@ namespace SCCL.Web.Controllers
 
             return RedirectToAction("Index", "SiteAdmin", new { area = "" });
 
+        }
+
+        public FileContentResult GetImage(int id)
+        {
+            solutionServices = new SolutionServiceViewModel { Services = _repository.Services };
+
+            Service service = solutionServices.Services.FirstOrDefault(s => s.Id == id);
+
+            return service != null ? File(service.ImageData, service.ImageMimeType) : null;
         }
     }
 }

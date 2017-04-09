@@ -17,17 +17,19 @@ GO
 
 Create table Solutions
 (
-	[SolutionsId] INT NOT NULL PRIMARY KEY IDENTITY,
-	[Image] IMAGE,
-	[Name] NVARCHAR(100) NOT NULL,
-	[DESCRIPTION] NVARCHAR(512) NOT NULL,
+	[SolutionsId] 				INT NOT NULL PRIMARY KEY IDENTITY,
+	[ImageData] 				varbinary (max) default null,
+	[ImageMimeType]				varchar (50) default null,
+	[Name] NVARCHAR(100) 		NOT NULL,
+	[DESCRIPTION] NVARCHAR(512) 	NOT NULL,
 )
 
 Create table Services
 (
-	[ServicesId] INT NOT NULL PRIMARY KEY IDENTITY,
-	[Image] IMAGE,
-	[Name] NVARCHAR(100) NOT NULL,
+	[ServicesId] 				INT NOT NULL PRIMARY KEY IDENTITY,
+	[ImageData] 				varbinary (max) default null,
+	[ImageMimeType]				varchar (50) default null,
+	[Name] 						NVARCHAR(100) NOT NULL,
 	[DESCRIPTION] NVARCHAR(512) NOT NULL,
 )
 
@@ -93,7 +95,7 @@ GO
 Create PROCEDURE sp_retrieve_solutions
 AS
 BEGIN
-SELECT SolutionsId, Name, Description
+SELECT SolutionsId, Name, Description, ImageMimeType, ImageData
 FROM Solutions
 END
 
@@ -102,7 +104,7 @@ GO
 Create PROCEDURE sp_retrieve_services
 AS
 BEGIN
-SELECT ServicesId, Name, Description
+SELECT ServicesId, Name, Description, ImageMimeType, ImageData
 FROM Services
 END
 GO
@@ -111,22 +113,26 @@ print '' print '*** Creating sp_update_solution'
 GO
 CREATE PROCEDURE [dbo].[sp_update_solution]
 	(
-		@Id					[int],
+		@Id						[int],
 		
 		@OldName				[nvarchar](100), 
 		@OldDescription			[nvarchar](512), 
 		
 		@NewName				[nvarchar](100), 
-		@NewDescription			[nvarchar](512)
+		@NewDescription			[nvarchar](512),
+		@NewImageData			[varbinary](max),
+		@NewImageMimeType		[varchar](50)
 	)
 AS
 	BEGIN
 		UPDATE Solutions
-		      SET Name = @NewName,
-				  Description = @NewDescription
-			WHERE SolutionsId = @Id
-			  AND Name = @OldName
-			  AND Description = @OldDescription
+		  SET Name = @NewName,
+			  Description = @NewDescription,
+			  ImageData = @NewImageData,
+			  ImageMimeType = @NewImageMimeType
+		WHERE SolutionsId = @Id
+		  AND Name = @OldName
+		  AND Description = @OldDescription
 		RETURN @@ROWCOUNT
 	END
 GO
@@ -138,16 +144,20 @@ CREATE PROCEDURE [dbo].[sp_update_service]
 		@Id					[int],
 		
 		@OldName				[nvarchar](100), 
-		@OldDescription			[nvarchar](512), 
+		@OldDescription			[nvarchar](512),
 		
 		@NewName				[nvarchar](100), 
-		@NewDescription			[nvarchar](512)
+		@NewDescription			[nvarchar](512),
+		@NewImageData			[varbinary](max),
+		@NewImageMimeType		[varchar](50) 
 	)
 AS
 	BEGIN
 		UPDATE Services
 		      SET Name = @NewName,
-				  Description = @NewDescription
+				  Description = @NewDescription,
+				  ImageData = @NewImageData,
+				  ImageMimeType = @NewImageMimeType
 			WHERE ServicesId = @Id
 			  AND Name = @OldName
 			  AND Description = @OldDescription
@@ -188,14 +198,16 @@ GO
 CREATE PROCEDURE [dbo].[sp_create_solution]
 (
 	@NAME				[NVARCHAR](100),
-	@DESCRIPTION		[NVARCHAR](512)
+	@DESCRIPTION		[NVARCHAR](512),
+	@ImageData			[varbinary](max),
+	@ImageMimeType		[varchar](50)
 )
 AS
 	BEGIN
 		INSERT INTO [dbo].[Solutions]
-			(NAME, DESCRIPTION)
+			(NAME, DESCRIPTION, ImageData, ImageMimeType)
 		VALUES
-			(@NAME, @DESCRIPTION)
+			(@NAME, @DESCRIPTION, @ImageData, @ImageMimeType)
 		RETURN @@ROWCOUNT
 	END
 GO
@@ -205,14 +217,16 @@ GO
 CREATE PROCEDURE [dbo].[sp_create_service]
 (
 	@NAME				[NVARCHAR](100),
-	@DESCRIPTION		[NVARCHAR](512)
+	@DESCRIPTION		[NVARCHAR](512),
+	@ImageData			[varbinary](max),
+	@ImageMimeType		[varchar](50)
 )
 AS
 	BEGIN
 		INSERT INTO [dbo].[Services]
-			(NAME, DESCRIPTION)
+			(NAME, DESCRIPTION, ImageData, ImageMimeType)
 		VALUES
-			(@NAME, @DESCRIPTION)
+			(@NAME, @DESCRIPTION, @ImageData, @ImageMimeType)
 		RETURN @@ROWCOUNT
 	END
 GO

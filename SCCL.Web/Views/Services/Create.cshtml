@@ -7,9 +7,11 @@
 
 <h2>Create Service</h2>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Create", "Services", FormMethod.Post, new {enctype = "multipart/form-data"}))
 {
     @Html.AntiForgeryToken()
+    
+    @Html.Partial("_ImageUploadSer", Model)
 
     <div class="my-contact-form">
         <h4>Boat</h4>

@@ -27,7 +27,9 @@ namespace SCCL.Domain.DataAccess
                             {
                                 Id = reader.GetInt32(0),
                                 Name = reader.GetString(1),
-                                Description = reader.GetString(2)
+                                Description = reader.GetString(2),
+                                ImageMimeType = reader.IsDBNull(3) ? null : reader.GetString(3),
+                                ImageData = reader.IsDBNull(4) ? null : reader["ImageData"] as byte[]
                             };
                             services.Add(service);
                         }
@@ -39,7 +41,6 @@ namespace SCCL.Domain.DataAccess
             }
 
             return services;
-
         }
 
         public static bool CreateService(Service service)
@@ -47,12 +48,26 @@ namespace SCCL.Domain.DataAccess
             var rowsAffected = 0;
 
             var conn = DbConnection.GetConnection();
-            var cmdText = @"sp_create_service";
+            const string cmdText = @"sp_create_service";
 
             using (var cmd = new SqlCommand(cmdText, conn) { CommandType = CommandType.StoredProcedure })
             {
                 cmd.Parameters.AddWithValue("@Name", service.Name);
                 cmd.Parameters.AddWithValue("@Description", service.Description);
+
+                if (service.ImageData == null)
+                {
+                    cmd.Parameters.Add("@ImageData", SqlDbType.VarBinary, -1);
+                    cmd.Parameters["@ImageData"].Value = DBNull.Value;
+
+                    cmd.Parameters.Add("@ImageMimeType", SqlDbType.VarChar);
+                    cmd.Parameters["@ImageMimeType"].Value = DBNull.Value;
+                }
+                else
+                {
+                    cmd.Parameters.AddWithValue("@ImageData", service.ImageData);
+                    cmd.Parameters.AddWithValue("@ImageMimeType", service.ImageMimeType);
+                }
 
                 try
                 {
@@ -66,16 +81,16 @@ namespace SCCL.Domain.DataAccess
             }
 
             return rowsAffected == 1;
-        }
+            }
 
-        public static bool UpdateSolution(Service oldService, Service newService)
+        public static bool UpdateService(Service oldService, Service newService)
         {
             var rowsAffected = 0;
 
             var conn = DbConnection.GetConnection();
             var cmdText = @"sp_update_service";
 
-            using (var cmd = new SqlCommand(cmdText, conn) { CommandType = CommandType.StoredProcedure })
+            using (var cmd = new SqlCommand(cmdText, conn) {CommandType = CommandType.StoredProcedure})
             {
                 cmd.Parameters.AddWithValue("@Id", oldService.Id);
 
@@ -85,6 +100,20 @@ namespace SCCL.Domain.DataAccess
                 cmd.Parameters.AddWithValue("@NewName", newService.Name);
                 cmd.Parameters.AddWithValue("@NewDescription", newService.Description);
 
+                if (newService.ImageData == null)
+                {
+                    cmd.Parameters.Add("@NewImageData", SqlDbType.VarBinary, -1);
+                    cmd.Parameters["@NewImageData"].Value = DBNull.Value;
+
+                    cmd.Parameters.Add("@NewImageMimeType", SqlDbType.VarChar);
+                    cmd.Parameters["@NewImageMimeType"].Value = DBNull.Value;
+                }
+                else
+                {
+                    cmd.Parameters.AddWithValue("@NewImageData", newService.ImageData);
+                    cmd.Parameters.AddWithValue("@NewImageMimeType", newService.ImageMimeType);
+                }
+
                 try
                 {
                     conn.Open();
@@ -97,16 +126,17 @@ namespace SCCL.Domain.DataAccess
             }
 
             return rowsAffected == 1;
-        }
+
+            }
 
         public static bool DeleteService(int id)
         {
             var rowsAffected = 0;
 
             var conn = DbConnection.GetConnection();
-            var cmdText = @"sp_delete_service";
+            const string cmdText = @"sp_delete_service";
 
-            using (var cmd = new SqlCommand(cmdText, conn) { CommandType = CommandType.StoredProcedure })
+            using (var cmd = new SqlCommand(cmdText, conn) {CommandType = CommandType.StoredProcedure})
             {
                 cmd.Parameters.AddWithValue("@Id", id);
 

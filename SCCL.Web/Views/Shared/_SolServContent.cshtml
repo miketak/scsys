@@ -1,4 +1,16 @@
 ﻿@model SCCL.Web.ViewModels.SolutionServiceViewModel
+           
+
+@if (ViewBag.NavTitle == "Solutions")
+{
+    <img class="img-responsive" width="1970" height="700" src="@Url.Action("GetImage", "Solutions", new { Model.Solution.Id })" alt="--" />
+}
+else
+{
+    <img class="img-responsive" width="1970" height="700" src="@Url.Action("GetImage", "Services", new { Model.Service.Id})" alt="--" />
+}
+
+@*<img src="~/Content/Images/Services/img-1.jpg" class="img-responsive" alt="renewable-energy"/>*@
    
 
 

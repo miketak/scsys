@@ -196,6 +196,8 @@
     <Content Include="Views\Solutions\Create.cshtml" />
     <Content Include="Views\Services\Edit.cshtml" />
     <Content Include="Views\Services\Create.cshtml" />
+    <Content Include="Views\Shared\_ImageUploadSer.cshtml" />
+    <Content Include="Views\Shared\_ImageUploadSol.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
